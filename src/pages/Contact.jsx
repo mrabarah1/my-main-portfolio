@@ -40,7 +40,7 @@ const Contact = () => {
           className="mt-8 text-2xl "
         >
           <div className="">
-            <h2 className="font-semibold">Let's create thre future</h2>
+            <h2 className="font-semibold">Let's create the future</h2>
             <p>
               I'm available for collabrations and will be excited to hear from you.
             </p>
