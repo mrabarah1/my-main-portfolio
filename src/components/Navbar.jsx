@@ -29,12 +29,12 @@ const Navbar = () => {
             );
           })}
         </div>
-        {/* <button
+        <button
           onClick={openSidebar}
           className="fixed top-8 right-12 text-4xl bg-transparent border-transparent text-slate-900 cursor-pointer animate-bounce duration-300 ease-in-out sm:hidden md:hidden"
         >
           <FaBars />
-        </button> */}
+        </button>
       </div>
     </nav>
   );

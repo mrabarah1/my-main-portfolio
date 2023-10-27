@@ -22,13 +22,13 @@ const Contact = () => {
     
   return (
     <>
-    {/* <section className="bg-white px-10 py-24">
+      {/* <section className="bg-white px-10 py-24">
 
     </section> */}
-      <div className="bg-white py-20">
-
-        <div className="mx-auto max-w-7xl px-8 py-4 grid md:grid-cols-2 items-center gap-16">
+      <div className=" py-20 mx-auto max-w-7xl px-8">
         <SectionTitle text="Contact Me" />
+
+        <div className=" py-4 grid md:grid-cols-2 items-center gap-16">
           <motion.div
             initial={{ x: -100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
