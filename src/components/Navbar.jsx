@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <nav className="bg-[#52525253]">
       {/* div to center all the content */}
-      <div className=" mx-auto max-w-7xl px-8 py-4 flex flex-col sm:flex-row sm:gap-x-16 sm:items-center sm:py-8 lg:flex-row lg:gap-x-80 lg:items-center lg:py-8 ">
+      <div className=" mx-auto max-w-7xl px-8 py-4 flex flex-col sm:flex-row sm:gap-x-40 sm:items-center sm:py-8 lg:flex-row lg:gap-x-80 lg:items-center lg:py-8 ">
         {/* logo */}
         <h2 className="text-3xl font-bold">
           <NavLink href="/">
@@ -29,12 +29,12 @@ const Navbar = () => {
             );
           })}
         </div>
-        <button
+        {/* <button
           onClick={openSidebar}
-          className="fixed top-8 right-12 text-4xl bg-transparent border-transparent text-slate-900 cursor-pointer animate-bounce duration-300 ease-in-out md:hidden"
+          className="fixed top-8 right-12 text-4xl bg-transparent border-transparent text-slate-900 cursor-pointer animate-bounce duration-300 ease-in-out sm:hidden md:hidden"
         >
           <FaBars />
-        </button>
+        </button> */}
       </div>
     </nav>
   );

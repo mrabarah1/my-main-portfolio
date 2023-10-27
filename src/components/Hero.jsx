@@ -5,8 +5,8 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <section className="bg-[#52525253] py-24  duration-300">
-      <div className="mx-auto max-w-7xl px-8 grid md:grid-cols-2 items-center gap-8">
+    <section className="bg-[#52525253]  py-24  duration-300">
+      <div className="mx-auto max-w-7xl px-8 py-4 grid md:grid-cols-2 items-center gap-16">
         <article>
           <motion.h1
             initial={{ x: -100, opacity: 0 }}
@@ -75,7 +75,7 @@ const Hero = () => {
             }}
             src={heroImg}
             alt=""
-            className="border-0 h-80 lg:h-96"
+            className="w-80 h-96 lg:h-96"
           />
         </article>
       </div>
