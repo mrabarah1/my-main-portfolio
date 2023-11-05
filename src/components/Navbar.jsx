@@ -1,4 +1,4 @@
-import { FaBars } from 'react-icons/fa';
+import {  FaBarsStaggered } from "react-icons/fa6";
 import { useGlobalContext } from '../context';
 import { NavLink } from 'react-router-dom';
 import { links } from '../data'
@@ -33,7 +33,8 @@ const Navbar = () => {
           onClick={openSidebar}
           className="fixed top-8 right-12 text-4xl bg-transparent border-transparent text-slate-900 cursor-pointer animate-bounce duration-300 ease-in-out sm:hidden md:hidden"
         >
-          <FaBars />
+          {/* <FaBars /> */}
+          <FaBarsStaggered />
         </button>
       </div>
     </nav>
