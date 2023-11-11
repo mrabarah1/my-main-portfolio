@@ -23,7 +23,7 @@ const Navbar = () => {
   return (
     <nav className="bg-[#52525253]">
       {/* div to center all the content */}
-      <div className=" mx-auto max-w-7xl px-8 py-4 flex gap-x-16 sm:flex-row sm:gap-x-40 sm:items-center sm:py-8 lg:flex-row lg:gap-x-80 lg:items-center lg:py-8">
+      <div className=" mx-auto max-w-7xl px-8 py-4 flex gap-x-8 sm:flex-row sm:gap-x-40 sm:items-center sm:py-8 lg:flex-row lg:gap-x-80 lg:items-center lg:py-8">
         {/* flex-col removed */}
         {/* logo */}
         <h2 className="text-3xl font-bold">
@@ -47,22 +47,27 @@ const Navbar = () => {
           })}
         </div>
 
-        <div className="flex justify-center items-center gap-6">
-          <label className="swap swap-rotate">
-            <input type="checkbox" onChange={handleTheme} />
-            {/* sun icon */}
-            <BsSunFill className="swap-on h-4 w-4" />
-            {/* moon icon */}
-            <BsMoonFill className="swap-off h-4 w-4" />
-          </label>
-
-          <button
-            onClick={openSidebar}
-            className=" top-8 right-12 text-3xl bg-transparent border-transparent text-slate-900 cursor-pointer animate-none duration-300 ease-in-out sm:hidden md:hidden "
-          >
-            {/* <FaBars /> */}
-            <FaBarsStaggered />
-          </button>
+        <div>
+          <div className="flex justify-center items-center gap-x-4 mt-2 mr-6">
+            <label className="swap swap-rotate">
+              <input type="checkbox" onChange={handleTheme} />
+              {/* sun icon */}
+              <BsSunFill className="swap-on h-4 w-4" />
+              {/* moon icon */}
+              <BsMoonFill className="swap-off h-4 w-4" />
+            </label>
+          </div>
+        </div>
+        <div className="">
+          <div className="flex justify-center items-center">
+            <button
+              onClick={openSidebar}
+              className=" top-8 text-3xl bg-transparent border-transparent text-slate-900 cursor-pointer animate-none duration-300 ease-in-out sm:hidden md:hidden "
+            >
+              {/* <FaBars /> */}
+              <FaBarsStaggered className="" />
+            </button>
+          </div>
         </div>
       </div>
     </nav>

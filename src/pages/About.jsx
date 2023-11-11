@@ -4,6 +4,7 @@ import SectionTitle from "../components/SectionTitle"
 import { aboutInfo } from "../data";
 import { motion } from "framer-motion";
 
+
 const AboutPage = () => {
   const [readMore, setReadMore] = useState(false);
   return (
