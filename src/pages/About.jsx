@@ -60,6 +60,8 @@ const AboutPage = () => {
                   className="text-slate-600 mt-8 leading-loose"
                   key={about.id}
                 >
+                  <p>
+
                   {readMore ? paraInfo : `${paraInfo.substring(0, 400)}...`}
                   <button
                     onClick={() => setReadMore(!readMore)}
@@ -67,6 +69,7 @@ const AboutPage = () => {
                   >
                     {readMore ? "Show Less" : "Read More"}
                   </button>
+                  </p>
                 </motion.p>
               </div>
             );
